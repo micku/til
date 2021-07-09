@@ -1,0 +1,27 @@
+name: Lint new/changed articles
+on: [push]
+jobs:
+  lint-articles:
+    name: Lint articles
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: List changed files
+        uses: trilom/file-changes-action@v1.2.3
+        with:
+          fileOutput: ','
+
+      - name: Use node
+        uses: actions/setup-node@v1
+
+      - name: Lint articles
+        run: |
+          IFS=',' read -ra ADDR <<< "$(cat $HOME/files.csv)"
+          for i in "${ADDR[@]}"; do
+            if [ "${i: -3}" == ".md" ]; then
+              echo "Linting $i..."
+              npx markdownlint-cli "./$i"
+            fi
+          done
