@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@700&family=Newsreader&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@700&family=Newsreader&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+  font-family: 'Newsreader', serif;
+}
+
+header h1, header .font-bold {
+  font-family: 'Istok Web', sans-serif;
+}
+
+header h1 {
+  padding: 0 0 .5rem 0;
+}
+
+aside .md ul {
+  padding: 0;
+  list-style-position: outside;
+  list-style-type: none;
+}
+
+aside .md ul li ul {
+  padding: 0 0 0 2rem;
+  list-style-position: outside;
+  list-style-type: disc;
+}
+
+aside .md ul li ul li {
+  margin: 0;
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 0 .5rem;
+  margin-left: -4px;
+}
+
+nav ul li:not(:last-child) {
+  border-right: 1px solid black;
+}
+
+nav .text-md {
+  font-size: 1rem;
+}

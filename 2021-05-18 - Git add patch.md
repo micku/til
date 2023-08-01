@@ -1,8 +1,8 @@
 ---
-title: Git add part of file
+title: Git add patch
+date: 2021-05-18
 tags: git
 ---
-
 You can add sections of a file interactively using the patch command:
 ```
 git add -p <pathspec>
