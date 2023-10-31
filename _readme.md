@@ -13,6 +13,7 @@ Seems like [public learning](/?tag=public-learning) is a great way to learn, her
 - *Personal Improvement*
   - [#public-learning](/?tag=public-learning)
 - *Tech*
+  - [#coding](/?tag=coding)
   - [#git](/?tag=git)
   - [#java](/?tag=java)
   - [#standards](/?tag=standards)
