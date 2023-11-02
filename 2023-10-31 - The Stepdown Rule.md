@@ -4,15 +4,13 @@ date: 2023-10-31
 tags:
   - coding
 ---
-Functions should be organized for better code readability.
+Code files (or classes) should contain well organized functions (or methods) from top to bottom for better code readability.
 
-This means that, in the same source file, first you want the more abstract functions followed by lower level code.
+This means that first should there be the more abstract function/method followed by lower level blocks.
 
-This does not mean that we should *group* by abstraction level, we should still group by reference. If more than one function has a high level of abstraction, and each of those require the use of lower level functions, the first one should be either of the higher level, followed by those referenced in it.
+This does not mean that we should *group* by abstraction level. If more than one function has a high level of abstraction, and each of those require the use of lower level functions, the first one should be either of the higher level, followed by those referenced in it.
+Achieving this may require some thought for getting the correct order, one must not be lazy in this context.
 
-This is because:
-
-- It is more convenient starting to read from a high level of abstraction and then go into details;
-- No one reads code blocks by similarity, everyone follows the logic.
+This is because, as [Uncle Bob Martin](http://cleancoder.com/products) states in [Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882), expectation when reading good code is like reading a newspaper, it first briefly introduces the topic, and then goes into detail.
 
 Source: https://dzone.com/articles/the-stepdown-rule
