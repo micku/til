@@ -16,4 +16,5 @@ Seems like [public learning](/?tag=public-learning) is a great way to learn, her
   - [#coding](/?tag=coding)
   - [#git](/?tag=git)
   - [#java](/?tag=java)
+  - [#kubernetes](/?tag=kubernetes)
   - [#standards](/?tag=standards)
